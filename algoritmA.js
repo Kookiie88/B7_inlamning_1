@@ -1,7 +1,7 @@
 export function algoritmA(guess, rightAnswer) {
   // Convert the guess and right answer to uppercase and split them into arrays and create a empty array
-  let guessArray = guess.toUpperCase().split("");
-  let rightAnswerArray = rightAnswer.toUpperCase().split("");
+  let guessArray = guess.toUpperCase().split('');
+  let rightAnswerArray = rightAnswer.toUpperCase().split('');
   let results = [];
 
   // First pass: Check for "correct" and "incorrect" letters
@@ -10,10 +10,10 @@ export function algoritmA(guess, rightAnswer) {
   // If the letter is not at the correct position, mark it as "incorrect" for now
   for (let i = 0; i < guessArray.length; i++) {
     if (guessArray[i] === rightAnswerArray[i]) {
-      results[i] = { letter: guessArray[i], result: "correct" };
+      results[i] = { letter: guessArray[i], result: 'correct' };
       rightAnswerArray[i] = null;
     } else {
-      results[i] = { letter: guessArray[i], result: "incorrect" };
+      results[i] = { letter: guessArray[i], result: 'incorrect' };
     }
   }
 
@@ -21,8 +21,8 @@ export function algoritmA(guess, rightAnswer) {
   // If the letter is in the right answer array but at a different position, mark it as "misplaced"
   // Remove the letter from the right answer array to avoid double counting
   for (let i = 0; i < guessArray.length; i++) {
-    if (results[i].result === "incorrect" && rightAnswerArray.includes(guessArray[i])) {
-      results[i].result = "misplaced";
+    if (results[i].result === 'incorrect' && rightAnswerArray.includes(guessArray[i])) {
+      results[i].result = 'misplaced';
       rightAnswerArray[rightAnswerArray.indexOf(guessArray[i])] = null;
     }
   }
