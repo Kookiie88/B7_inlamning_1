@@ -1,4 +1,4 @@
-export function algoritmA(guess, rightAnswer) {
+export function wordle(guess, rightAnswer) {
   // Convert the guess and right answer to uppercase and split them into arrays and create a empty array
   let guessArray = guess.toUpperCase().split('');
   let rightAnswerArray = rightAnswer.toUpperCase().split('');

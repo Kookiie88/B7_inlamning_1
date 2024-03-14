@@ -6,7 +6,7 @@ export const words = [
 ];
 
 // The function takes a list of words, a desired length, and a boolean indicating whether the word should have unique letters.
-export function algoritmB(wordList, desiredLength, uniqueLetters) {
+export function chooseWords(wordList, desiredLength, uniqueLetters) {
   // Filters the list of words based on the desired length and whether the word should have unique letters.
   // If uniqueLetters is true, it uses a Set to remove any duplicate letters from the word before comparing its length.
   // If uniqueLetters is false, it doesn't use Set and includes all words regardless of whether they have duplicate letters or not.
@@ -25,13 +25,13 @@ export function algoritmB(wordList, desiredLength, uniqueLetters) {
 }
 
 /*
-This code demonstrates the usage of the algoritmB function. 
+This code demonstrates the usage of the chooseWords function. 
 An array of words and parameters are passed to the function. 
 If the array is empty or lacks a suitable word, the function throws an error. 
 This error is caught and its message is logged to the console.
 
 try {
-  result = algoritmB(wordList, desiredLength, uniqueLetters);
+  result = chooseWords(wordList, desiredLength, uniqueLetters);
 } catch (error) {
   console.error(error.message); 
 } 
