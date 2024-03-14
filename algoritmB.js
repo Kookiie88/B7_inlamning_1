@@ -23,3 +23,16 @@ export function algoritmB(wordList, desiredLength, uniqueLetters) {
   // Returns the selected word.
   return randomWord;
 }
+
+/*
+This code demonstrates the usage of the algoritmB function. 
+An array of words and parameters are passed to the function. 
+If the array is empty or lacks a suitable word, the function throws an error. 
+This error is caught and its message is logged to the console.
+
+try {
+  result = algoritmB(wordList, desiredLength, uniqueLetters);
+} catch (error) {
+  console.error(error.message); 
+} 
+*/
