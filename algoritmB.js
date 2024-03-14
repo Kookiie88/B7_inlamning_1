@@ -1,8 +1,8 @@
 // The list of words grouped by their lengths.
 export const words = [
-  ["natt", "kram", "flod", "rost", "berg"],
-  ["mamma", "viten", "hjälp", "plats", "räven"],
-  ["diskar", "smocka", "skugga", "snövit", "läkare"],
+  ['natt', 'kram', 'flod', 'rost', 'berg'],
+  ['mamma', 'viten', 'hjälp', 'plats', 'räven'],
+  ['diskar', 'smocka', 'skugga', 'snövit', 'läkare'],
 ];
 
 // The function takes a list of words, a desired length, and a boolean indicating whether the word should have unique letters.
@@ -14,7 +14,7 @@ export function algoritmB(wordList, desiredLength, uniqueLetters) {
 
   // If the filtered list is empty, it throws an error.
   if (!filteredList.length) {
-    throw new Error("Inget passande ord finns.");
+    throw new Error('Inget passande ord finns.');
   }
 
   // Selects a random word from the filtered list.
